@@ -1,0 +1,12 @@
+Constrained Instances: 'spacer-1', 'spacer-1', 'permanent_magnet-1', 'permanent_magnet-2'
+Constraint Name: Width5
+Error Details: Constraint is not supported. The constraint has been ignored.
+---------------------------------------------------------------------------------
+Constrained Instances: 'end_contact-3', 'end_contact-3', 'cover-1', 'cover-1'
+Constraint Name: Width7
+Error Details: Constraint is not supported. The constraint has been ignored.
+---------------------------------------------------------------------------------
+Constrained Instances: 'end_contact-3', 'end_contact-3', 'Rotor-1', 'Rotor-1'
+Constraint Name: Width8
+Error Details: Constraint is not supported. The constraint has been ignored.
+---------------------------------------------------------------------------------

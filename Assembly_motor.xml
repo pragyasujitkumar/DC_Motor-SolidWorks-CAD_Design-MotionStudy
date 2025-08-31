@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/05/25||17:13:33" using="Simscape Multibody Link Version 7.4" from="SolidWorks 32.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assembly_motor" uid="Assembly_motor" version="2871">
+<AssemblyFile name="Assembly_motor.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="brushing1-1" uid="brushing1-1" entityUid="brushing1*:*Default">
+<Transform>
+<Rotation>-0.84873019186851462 0.52882611642281285 0 -0.52882611642281285 -0.84873019186851462 0 0 0 1</Rotation>
+<Translation>0.011603680070048637 -0.0022007663463980633 0.010933306802328686</Translation>
+</Transform>
+</Instance>
+<Instance name="Rotor-1" uid="Rotor-1" entityUid="Rotor*:*Default">
+<Transform>
+<Rotation>0.97680297905253499 -0.2141400012003663 2.1036755949699557e-15 -0.2141400012003663 -0.97680297905253499 3.9990918502053826e-16 1.9692400347664309e-15 -8.4111357771058072e-16 -1</Rotation>
+<Translation>0.011603680070048592 -0.0022007663463980971 -0.0015666931976713295</Translation>
+</Transform>
+</Instance>
+<Instance name="Housing-1" uid="Housing-1" entityUid="Housing*:*Default">
+<Transform>
+<Rotation>-0.99999999999999989 0 0 0 0.99999999999999989 0 0 0 -0.99999999999999978</Rotation>
+<Translation>0.011603680070048642 -0.0022007663463980663 -0.0015666931976713212</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="0.25"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="0.25"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="0.25"/>
+<Emissive r="0" g="0" b="0" a="0.25"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="cover-1" uid="cover-1" grounded="true" entityUid="cover*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.011603680070048639 -0.0022007663463980641 0.0079333068023286855</Translation>
+</Transform>
+</Instance>
+<Instance name="brushing2_shaft_fixture-1" uid="brushing2_shaft_fixture-1" entityUid="brushing2_shaft_fixture*:*Default">
+<Transform>
+<Rotation>0.90493648238132496 0.42554666354621334 0 -0.42554666354621334 0.90493648238132496 0 0 0 0.99999999999999989</Rotation>
+<Translation>0.011603680070048635 -0.0022007663463980624 -0.012441693197671317</Translation>
+</Transform>
+</Instance>
+<Instance name="permanent_magnet-1" uid="permanent_magnet-1" entityUid="permanent_magnet*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.011603680070048639 -0.0022007663463980646 -0.0070666931976713053</Translation>
+</Transform>
+</Instance>
+<Instance name="spacer-1" uid="spacer-1" entityUid="spacer*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.011603680070049489 0.0039242336536019331 -0.0024416931976712977</Translation>
+</Transform>
+</Instance>
+<Instance name="end_contact-3" uid="end_contact-3" entityUid="end_contact*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.016093680070048657 -0.0027007663463980616 0.0080333068023286658</Translation>
+</Transform>
+</Instance>
+<Instance name="end_contact-4" uid="end_contact-4" entityUid="end_contact*:*Default">
+<Transform>
+<Rotation>-1 6.9829626776862667e-15 0 -6.9829626776862667e-15 -1 0 0 0 1</Rotation>
+<Translation>0.0071136800700486169 -0.0017007663463980967 0.0080333068023286658</Translation>
+</Transform>
+</Instance>
+<Instance name="permanent_magnet-2" uid="permanent_magnet-2" entityUid="permanent_magnet*:*Default">
+<Transform>
+<Rotation>-1 6.9829626776862667e-15 0 -6.9829626776862667e-15 -1 0 0 0 1</Rotation>
+<Translation>0.011603680070048644 -0.0022007663463980672 -0.0070666931976713062</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>brushing1-1</Uid>
+</InstancePath>
+<Position>0 0 0.0029999999999999992</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>cover-1</Uid>
+</InstancePath>
+<Position>0 0 0.0060000000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>brushing1-1</Uid>
+</InstancePath>
+<Position>0 0 0.0029999999999999992</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cover-1</Uid>
+</InstancePath>
+<Position>0 0 0.0060000000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>cover-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0014999999999999996</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0 0.0094999999999999963</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Parallel name="Parallel8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cover-1</Uid>
+</InstancePath>
+<Position>-0.0061237243569579464 0.0071999999999999998 -0.0014999999999999996</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0.0074999999999999971 0.0094999999999999963</Position>
+<Axis>0 0.99999999999999989 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Concentric10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0 0.0094999999999999963</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>permanent_magnet-1</Uid>
+</InstancePath>
+<Position>0 0 0.012</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>-0.0089999999999999959 0 0.0054999999999999997</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>permanent_magnet-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident14">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0.0071249999999999968 0.0094999999999999963</Position>
+<Axis>0 -0.99999999999999989 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>spacer-1</Uid>
+</InstancePath>
+<Position>0.0019500000000000003 0.001 -0.0054999999999999997</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident15">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0 0.009124999999999996</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>spacer-1</Uid>
+</InstancePath>
+<Position>-0.0019499999999999813 0.001 -0.0082500000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric12">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>brushing2_shaft_fixture-1</Uid>
+</InstancePath>
+<Position>0 0 0.0017499999999999998</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0 0.011249999999999994</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident17">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>brushing2_shaft_fixture-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0 0.010874999999999994</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric14">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>brushing1-1</Uid>
+</InstancePath>
+<Position>0 0 0.0029999999999999992</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Rotor-1</Uid>
+</InstancePath>
+<Position>0 0 0.019</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident20">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cover-1</Uid>
+</InstancePath>
+<Position>0.0056000000000000008 0.0013999999999999985 -0.0030000000000000001</Position>
+<Axis>-1 -3.0977204928157272e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>end_contact-3</Uid>
+</InstancePath>
+<Position>0.0011099999999999999 -0.0018349999999999998 0.0025000000000000005</Position>
+<Axis>1 2.9542293528215374e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident21">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>brushing1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Rotor-1</Uid>
+</InstancePath>
+<Position>0 0 -0.012499999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident22">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cover-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Housing-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0094999999999999963</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Housing" uid="Housing*:*Default" version="957">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Housing.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00050144646739159039</Mass>
+<CenterOfMass>3.0037205582569641e-10 4.1200652746393868e-06 0.0015215364657620264</CenterOfMass>
+<Inertia>3.413547600529387e-08 4.0873099202215755e-08 3.7624108750621051e-08 6.3762776972487561e-11 9.2584812578603435e-14 -2.5551749308398448e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Housing_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Rotor" uid="Rotor*:*Default" version="714">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Rotor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00080792144294077712</Mass>
+<CenterOfMass>-1.0604470270419928e-08 9.4758059743384844e-09 -0.0015366491801553327</CenterOfMass>
+<Inertia>2.3040816991798798e-08 2.3040771226710818e-08 1.5011122523664048e-08 1.417923410563026e-14 -2.2546169911081089e-14 3.326890226071297e-15</Inertia>
+</MassProperties>
+<GeometryFile name="Rotor_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.69019607843137254" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Diffuse r="0.69019607843137254" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Specular r="0.55215686274509801" g="0.5270588235294118" b="0.51137254901960782" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="brushing1" uid="brushing1*:*Default" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="brushing1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>7.4724032132837567e-05</Mass>
+<CenterOfMass>0 0 0.0015</CenterOfMass>
+<Inertia>2.413845551402807e-10 2.413845551402807e-10 3.7248691523445983e-10 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="brushing1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="brushing2_shaft_fixture" uid="brushing2_shaft_fixture*:*Default" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="brushing2_shaft_fixture.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.5125513556567972e-05</Mass>
+<CenterOfMass>0 0 0.00089338452931749576</CenterOfMass>
+<Inertia>8.2599532441514391e-11 8.2599532441514391e-11 1.4794788463499009e-10 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="brushing2_shaft_fixture_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="cover" uid="cover*:*Default" version="275">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="cover.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00095548301249883381</Mass>
+<CenterOfMass>5.942033340359173e-09 -8.0014329700688987e-09 0.0021173542879230861</CenterOfMass>
+<Inertia>2.492146283814429e-08 3.8629233803411776e-08 5.1649160319042477e-08 -2.8583498963473098e-15 2.9883976245470205e-15 9.7114251625368259e-11</Inertia>
+</MassProperties>
+<GeometryFile name="cover_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.39803921568627448" g="0.41176470588235292" b="0.46862745098039216" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="end_contact" uid="end_contact*:*Default" version="246">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="end_contact.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.3039537863597347e-05</Mass>
+<CenterOfMass>-0.0010487683354318568 -0.00032257549581704131 0.0019420661512526672</CenterOfMass>
+<Inertia>1.2386026077820218e-10 1.7684302751225129e-10 1.8523909939952025e-10 -1.1662551105445242e-11 -3.1232334470933466e-11 -3.9985654367016368e-11</Inertia>
+</MassProperties>
+<GeometryFile name="end_contact_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="permanent_magnet" uid="permanent_magnet*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="permanent_magnet.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0004588423910486223</Mass>
+<CenterOfMass>0.0073227656038730811 7.0528433920216928e-12 0.0059999999999999993</CenterOfMass>
+<Inertia>1.2684540362259003e-08 6.0750441652771671e-09 7.8609926057591815e-09 2.6423407825219862e-14 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="permanent_magnet_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.20000000000000001" g="0.20000000000000001" b="0.20000000000000001" a="1"/>
+<Diffuse r="0.20000000000000001" g="0.20000000000000001" b="0.20000000000000001" a="1"/>
+<Specular r="0.10000000000000001" g="0.10000000000000001" b="0.10000000000000001" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="spacer" uid="spacer*:*Default" version="112">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="spacer.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.6016511950820495e-05</Mass>
+<CenterOfMass>0 0.00050000000000000001 -0.0015287414826122929</CenterOfMass>
+<Inertia>6.419698565425695e-10 1.0485214847024585e-09 4.1042211813891181e-10 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="spacer_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.83137254901960778" g="0.6705882352941176" b="0.12941176470588234" a="1"/>
+<Diffuse r="0.83137254901960778" g="0.6705882352941176" b="0.12941176470588234" a="1"/>
+<Specular r="0.66509803921568622" g="0.53647058823529414" b="0.10352941176470587" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
